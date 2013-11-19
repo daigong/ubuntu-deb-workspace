@@ -1,0 +1,8 @@
+Package: uucin-bottle-redis
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: redis-server (>= 2.4.15-1)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Redis Conf

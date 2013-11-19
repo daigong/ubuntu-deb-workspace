@@ -1,0 +1,4 @@
+#!/bin/sh
+mv /etc/redis/redis.conf /etc/redis/redis.conf.old
+cp /etc/redis/redis-bottle.conf /etc/redis/redis.conf
+service redis-server restart

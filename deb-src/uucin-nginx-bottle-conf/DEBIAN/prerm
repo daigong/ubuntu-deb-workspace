@@ -1,0 +1,3 @@
+#!/bin/sh
+service uucin-nginx-bottle-conf stop
+

@@ -1,0 +1,6 @@
+server {
+        listen      1299;
+        server_name  localhost;
+	root  /home/QMMqAwQOuy.uucin.com/resource/;
+	autoindex on;
+}

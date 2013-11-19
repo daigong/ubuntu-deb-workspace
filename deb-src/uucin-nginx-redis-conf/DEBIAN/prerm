@@ -1,0 +1,4 @@
+#!/bin/sh
+rm -f /etc/nginx/sites-enabled/uucin-nginx-redis-conf
+service nginx reload
+

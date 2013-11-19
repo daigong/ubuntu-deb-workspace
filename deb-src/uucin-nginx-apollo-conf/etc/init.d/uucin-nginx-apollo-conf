@@ -1,0 +1,54 @@
+#!/bin/bash
+. /lib/lsb/init-functions
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+NAME=uucin-nginx-apollo-conf
+
+check_and_reload_nginx()
+{
+	service nginx configtest > /dev/null 2>&1
+
+	if [ 0 -ne $? ]
+	then
+		log_failure_msg "$NAME nginx test is failure,plz nginx -t"
+		exit 1
+	else
+		service nginx reload > /dev/null
+	fi
+}
+
+start()
+{
+	if [ -f /etc/nginx/sites-enabled/uucin-nginx-apollo-conf ]
+        then
+                log_success_msg "$NAME is already running"
+                exit 0
+        fi
+	ln -s /etc/nginx/sites-available/uucin-nginx-apollo-conf /etc/nginx/sites-enabled/uucin-nginx-apollo-conf
+	check_and_reload_nginx
+	log_success_msg "$NAME is start ok"
+}
+stop()
+{
+	rm -f /etc/nginx/sites-enabled/uucin-nginx-apollo-conf
+	check_and_reload_nginx
+        log_success_msg "$NAME is stop ok"
+}
+case "$1" in
+
+        start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        restart)
+		stop
+		start
+                ;;
+        *)
+            echo "Usage: $0 in start stop restart"
+	    exit 1
+	    ;;
+esac

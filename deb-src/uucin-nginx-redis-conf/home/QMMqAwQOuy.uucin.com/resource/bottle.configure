@@ -1,0 +1,7 @@
+{
+        "redis":{
+                "servers":[
+                        {"host":"127.0.0.1","port":6379,"weight":1,"password":null,"name":"server1","timeout":2000}
+                ]
+        }
+}

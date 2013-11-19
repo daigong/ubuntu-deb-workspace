@@ -1,0 +1,7 @@
+Package: uucin-tomcat7-bottle-libGeomlibrary
+Version: 1.1
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: uucin-tomcat7-libGeomlibrary 图形函数库

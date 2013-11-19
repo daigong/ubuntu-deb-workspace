@@ -1,0 +1,5 @@
+#!/bin/sh
+rm /etc/redis/redis.conf -f
+cp /etc/redis/redis.conf.old /etc/redis/redis.conf
+service redis-server restart
+

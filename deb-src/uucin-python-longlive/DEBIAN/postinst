@@ -1,0 +1,2 @@
+#!/bin/sh
+service uucin-python-longlive start
