@@ -1,5 +1,5 @@
 Package: uucin-nginx-apollo-conf
-Version: 1.1
+Version: 1.0
 Architecture: amd64
 Maintainer: DaiGong <daigongit@gmail.com>
 Depends: nginx (>= 1.1.19-1ubuntu0.2)
