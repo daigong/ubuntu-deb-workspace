@@ -15,6 +15,7 @@ check_and_reload_nginx()
 		exit 1
 	else
 		service nginx reload > /dev/null
+		service nginx start > /dev/null
 	fi
 }
 

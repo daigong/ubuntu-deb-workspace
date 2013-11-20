@@ -1,0 +1,8 @@
+Package: uucin-lbs
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-lbs-bottle (>= 1.0), uucin-lbs-apollo (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Lbs All Depends & Util Shell

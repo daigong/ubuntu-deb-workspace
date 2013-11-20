@@ -1,48 +1,48 @@
 #!/bin/bash
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 . /lib/lsb/init-functions
-NAME=uucin_lbs_apollo
+NAME=uucin_lbs_bottle
 
 
-init_apollo()
+init_bottle()
 {
 
-	wget "http://127.0.0.1:9180/apollo/address/code"  -O /dev/null -T 600 > /dev/null 2>&1
+	log_success_msg "waiting bottle init............"
+
+	wget "http://127.0.0.1:9080/bottle/address_code"  -O /dev/null -T 600 > /dev/null 2>&1
 
 	return_code=$?
 
 	if [ 0 -ne $return_code ]
 	then
-		log_failure_msg "$NAME init apollo failure! wget return code $return_code"
+		log_failure_msg "$NAME init bottle failure! wget return code $return_code"
 		exit $return_code
 	else
-		log_success_msg "init apollo ok"
+		log_success_msg "init bottle ok"
 	fi
 }
 
 start()
 {
-	service uucin-tomcat7-apollo start
+	service uucin-tomcat7-bottle start
 	log_success_msg "waiting tomcat start............"
 	sleep 15;
-	init_apollo
-	service uucin-nginx-apollo-conf start
-	service uucin-python-longlive start
+	init_bottle
+	service uucin-nginx-bottle-conf start
 	log_success_msg "$NAME start ok"
 }
 
 stop()
 {
-	service uucin-python-longlive stop
-	service uucin-nginx-apollo-conf stop
-        service uucin-tomcat7-apollo stop
+	service uucin-nginx-bottle-conf stop
+        service uucin-tomcat7-bottle stop
         log_success_msg "$NAME stop ok"
 }
 
 reload()
 {
-	service uucin-nginx-apollo-conf restart
-	init_apollo
+	service uucin-nginx-bottle-conf restart
+	init_bottle
 }
 
 case "$1" in
