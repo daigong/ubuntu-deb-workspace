@@ -7,6 +7,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 . /etc/profile.d/uu_jdk1.7.sh
 . /lib/lsb/init-functions
+. /etc/profile.d/uucin-tomcat7-bottle-libGeomlibrary.sh
 LANG=zh_CN.UTF-8
 LANGUAGE=zh_CN:zh
 TOMCAT_PATH=/usr/local/uu_tomcat7_bottle

@@ -20,7 +20,7 @@ then
                 then
                         echo "制作$deb_name deb包"
                         dpkg -b $deb_name
-                        \cp "$deb_name.deb" $MIRROR_PATH/pool/main/ -rfv
+                        \cp "$deb_name.deb" $MIRROR_PATH/pool/main/uucin -rfv
                 fi
         done
 else
@@ -29,7 +29,7 @@ else
         then
                 echo "制作 $1 deb 包"
                 dpkg -b $1
-                \cp "$1.deb" $MIRROR_PATH/pool/main/ -rfv
+                \cp "$1.deb" $MIRROR_PATH/pool/main/uucin -rfv
         else
                 echo "$1 不是合法的deb包结构"
         fi

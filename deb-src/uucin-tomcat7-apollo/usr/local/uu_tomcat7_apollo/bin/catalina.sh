@@ -84,7 +84,7 @@
 #
 # $Id: catalina.sh 1073891 2011-02-23 19:23:59Z markt $
 # -----------------------------------------------------------------------------
-JAVA_OPTS='-server -Xmn3g -XX:SurvivorRatio=6  -Xms8096m -Xmx14000m -XX:+UseConcMarkSweepGC -XX:CMSFullGCsBeforeCompaction=5 -XX:+UseCMSCompactAtFullCollection -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses -Djava.util.Arrays.useLegacyMergeSort=true'
+JAVA_OPTS='-server -Xmn3g -XX:SurvivorRatio=6  -Xms4096m -Xmx8400m -XX:+UseConcMarkSweepGC -XX:CMSFullGCsBeforeCompaction=5 -XX:+UseCMSCompactAtFullCollection -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses -Djava.util.Arrays.useLegacyMergeSort=true'
 
 CATALINA_PID='/var/run/uu_tomcat7_apollo.pid'
 
