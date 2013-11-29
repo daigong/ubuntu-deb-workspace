@@ -1,0 +1,8 @@
+Package: uucin-python-bingo
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: libevent-dev (>= 2.0.16-stable-1), python-virtualenv (>=1.7.1.2-1), python (>= 2.7.3-0ubuntu2), python2.7-dev (>= 2.7.3), postgresql-server-dev-9.1 (>= 9.1.10-0ubuntu12.04), supervisor (>=3.0a8-1.1), uucin-xapian (>=1.0), nginx (>= 1.1.19-1ubuntu0.4)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Python bingo For UUCIN LBS

@@ -1,0 +1,8 @@
+Package: uucin-xapian
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: g++ (>= 4:4.6.3-1ubuntu5), uuid-dev (>= 2.20.1-1ubuntu3), make (>= 3.81-8.1ubuntu1.1)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Xapian for bingo

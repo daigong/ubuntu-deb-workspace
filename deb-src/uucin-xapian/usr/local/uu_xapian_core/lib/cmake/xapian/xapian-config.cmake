@@ -1,0 +1,5 @@
+SET(prefix "/usr/local/uu_xapian_core")
+SET(exec_prefix "${prefix}")
+SET(XAPIAN_LIBRARIES "${exec_prefix}/lib/libxapian-1.3.so" CACHE FILEPATH "Libraries for Xapian")
+SET(XAPIAN_INCLUDE_DIR "${prefix}/include/xapian-1.3" CACHE PATH "Include path for Xapian")
+SET(XAPIAN_FOUND "TRUE")
