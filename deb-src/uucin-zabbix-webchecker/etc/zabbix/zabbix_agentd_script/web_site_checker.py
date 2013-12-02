@@ -3,34 +3,37 @@
 
 from sys import stdout
 from sys import argv
+import os
 import subprocess
 
 # stdout.write("1")
 # stdout.write("2")
 
 #WEB_URL_LIST_TXT = '/home/daigong/web_site_checker_url_list.conf'
-WEB_URL_LIST_TXT = '/etc/zabbix/other_plugin_conf/web_site_checker_url_list.conf'
+WEB_URL_LIST_DIR = '/etc/zabbix/zabbix_plugin.conf.d/web_site_checker/'
 
 
 def get_config_from_file():
     config = {}
-    file = open(WEB_URL_LIST_TXT)
-    try:
-        lines = file.readlines()
-        for i in range(0, len(lines)):
-            line = lines[i]
-            if line.startswith('#'):
-                continue
-            else:
+    config_files = os.listdir(WEB_URL_LIST_DIR)
+    for config_file in config_files:
+	    file = open("%s/%s" % ( WEB_URL_LIST_DIR, config_file ))
+	    try:
+		lines = file.readlines()
+		for i in range(0, len(lines)):
+		    line = lines[i]
+		    if line.startswith('#'):
+			continue
+		    else:
 
-                # file_demo: key=http://baidu.com/value?asd=123&asdasd=4321
+			# file_demo: key=http://baidu.com/value?asd=123&asdasd=4321
 
-                first_eq_index = line.find('=')
-                key = line[:first_eq_index].strip()
-                value = line[first_eq_index + 1:-1].strip()
-                config[key] = value
-    finally:
-        file.close()
+			first_eq_index = line.find('=')
+			key = line[:first_eq_index].strip()
+			value = line[first_eq_index + 1:-1].strip()
+			config[key] = value
+	    finally:
+		file.close()
 
     return config
 
