@@ -1,0 +1,8 @@
+Package: uucin-zabbix-webchecker-apollo
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-zabbix-webchecker (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Apollo Zabbix Script & conf for Web Checker

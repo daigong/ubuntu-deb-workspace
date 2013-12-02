@@ -1,0 +1,11 @@
+#nginx 1099
+check_mm_nginx = http://127.0.0.1:1099/apollo/map/match?blk=13243.8013
+check_view_nginx = http://127.0.0.1:1099/apollo/map/view?blk=0.1.6618.4000%2C0.1.6619.4001%2C0.1.6617.4001%2C0.1.6619.4000%2C0.1.6617.4000%2C0.1.6619.3999%2C0.1.6617.3999%2C0.1.6618.4001%2C0.1.6618.3999%2C0.1.6617.4002%2C0.1.6618.4002%2C0.1.6619.4002
+check_rg_nginx = http://127.0.0.1:1099/apollo/direction/rg?start_x=1137692020&start_y=384517590&goal_x=1137733359&goal_y=384555620&condition=1&reroute=0&dest=%E8%BD%A6%E6%98%93%E9%9A%86%E6%B1%BD%E8%BD%A6%E7%BE%8E%E5%AE%B9%E8%A3%85%E9%A5%B0%E4%B8%AD%E5%BF%83
+check_area_nginx = http://127.0.0.1:1099/apollo/poi/area?pos=1137447354,384038776
+check_poi_nginx = http://127.0.0.1:1099/apollo/poi?pos=1137692020,384517590&pageinfo=1,32&what=name:%E7%94%9F%E6%97%A5%E5%9F%8E&range=city:210100
+check_city_nginx = http://127.0.0.1:1099/apollo/poi/city?pos=1137634800,384925380
+check_bus_nginx = http://127.0.0.1:1099/apollo/direction/wb?start_lon=1137691708&start_lat=384516283&end_lon=1138039470&end_lat=387608131&limit=5&use=bus&type=1
+#tomcat 9080
+check_mm_tomcat = http://127.0.0.1:9180/apollo/map/match?blk=13243.8013
+check_view_tomcat = http://127.0.0.1:9180/apollo/map/view?blk=0.1.6618.4000%2C0.1.6619.4001%2C0.1.6617.4001%2C0.1.6619.4000%2C0.1.6617.4000%2C0.1.6619.3999%2C0.1.6617.3999%2C0.1.6618.4001%2C0.1.6618.3999%2C0.1.6617.4002%2C0.1.6618.4002%2C0.1.6619.4002
