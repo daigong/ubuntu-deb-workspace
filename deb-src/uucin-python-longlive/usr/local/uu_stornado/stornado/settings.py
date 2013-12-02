@@ -1,0 +1,113 @@
+#encoding:utf-8
+'''
+Created on 2011-11-14
+
+@author: earth
+'''
+RESPONSE_BUSSINESS_TABLE={
+    #地图匹配
+    '10010001':('http://127.0.0.1:1099/apollo/map/match?{raw}','GET'),
+    #地图描画
+    '10010002':('http://127.0.0.1:1099/apollo/map/view?{raw}','GET'),
+    #电子眼地图描画
+    '10010003':('http://127.0.0.1:1099/apollo/map/eeyeview?{raw}','GET'),
+    #加油站图层
+    '10010004':('http://127.0.0.1:1099/apollo/map/petrolview?{raw}','GET'),
+    #TMC道路描画
+    '10020001':('http://127.0.0.1:1099/bottle_tmc/view?{raw}','GET'),
+    #TMC路况信息
+    '10020002':('http://127.0.0.1:1099/bottle_tmc/dirc?{raw}','GET'),
+    #POI检索
+    '10030001':('http://127.0.0.1:1099/apollo/poi?{raw}','GET'),
+    #城市查询
+    '10030002':('http://127.0.0.1:1099/apollo/poi/city?{raw}','GET'),
+    #地点拾取
+    '10030003':('http://127.0.0.1:1099/apollo/poi/area?{raw}','GET'),
+    #十字路口查询
+    '10030004':('http://127.0.0.1:1099/apollo/cross?{raw}','GET'),
+    #十字路口道路查询
+    '10030005':('http://127.0.0.1:1099/apollo/cross/road?{raw}','GET'),
+    #分词检索
+    '10030006':('http://127.0.0.1:1099/apollo/poi/bingo?{raw}','GET'),
+    #驾车路线规划
+    '10040001':('http://127.0.0.1:1099/apollo/direction/rg?{raw}','GET'),
+    #公交步行路线规划
+    '10040002':('http://127.0.0.1:1099/apollo/direction/wb?{raw}','GET'),
+    #电子眼查询
+    '10050001':('http://127.0.0.1:1099/apollo/eeye?{raw}','GET'),
+    #电子眼增加
+    '10050002':('http://uueye-statistics.uucin.com:1121/bottle_eeye/eeyes/add?{raw}','GET'),
+    #电子眼删除
+    '10050003':('http://uueye-statistics.uucin.com:1121/bottle_eeye/eeyes/delete?{raw}','GET'),
+    #电子眼修改
+    '10050004':('http://uueye-statistics.uucin.com:1121/bottle_eeye/eeyes/update?{raw}','GET'),
+    #电子眼误报
+    '10050005':('http://uueye-statistics.uucin.com:1121/bottle_eeye/eeyes/error?{raw}','GET'),
+    #公交线路查询
+    '10060001':('http://127.0.0.1:1099/apollo/bus/busline?{raw}','GET'),
+    #公交站点查询
+    '10060002':('http://127.0.0.1:1099/apollo/bus/busstop?{raw}','GET'),    
+    #信息反馈存储
+    '10070001':('http://192.168.6.44:7001/feedbacks/client?{raw}','POST'),
+#    '10070001':('http://192.168.6.223:80/feedbacks/client?{raw}','POST'),
+    #信息反馈查询
+    '10070002':('http://192.168.6.44:7001/feedbacks/client?{raw}','GET'),
+#    '10070002':('http://192.168.6.223:80/feedbacks/client?{raw}','GET'),
+    #开机画页
+    '10070101':('http://192.168.6.44:7001/welcome/api/{raw}','GET'),
+    #获取开机广告画页
+    '10070102':('http://192.168.6.44:7001/advertisings/api/startup/{raw}','GET'),
+    #封锁推荐
+    '10070201':('http://192.168.6.44:7001/locks/api/{raw}','GET'),
+    #地址code
+    '10080001':('http://127.0.0.1:1099/apollo/address/code','GET'),
+    #种别code
+    '10090001':('http://127.0.0.1:1099/apollo/type/code','GET'),
+    #版本升级
+    '80010001':('http://192.168.6.44:7001/products/api/updater/{raw}','GET'),
+    #悠悠推荐
+    '10100002':('http://192.168.6.44:7001/recommends/client/{raw}','GET'),
+    #系统消息
+    '10100001':('http://192.168.6.44:7001/notices/client/{raw}','GET'),
+    #通过产品获取QQ群
+    '10100003':('http://10.1.8.151:8080/UUAthena_web_apps/apps/contact/{raw}','GET'),
+    #cell定位
+    '10110001':('http://127.0.0.1:1099/apollo/location/cell?{raw}','GET'),
+    #ip
+    '10110002':('http://127.0.0.1:1099/apollo/location/ip?{raw}','GET'),
+    #wifi
+    '10110003':('http://127.0.0.1:1099/apollo/location/wifi?{raw}','GET'),
+    #启动画页广告计数
+    '10100004':('http://192.168.6.44:7001/advertisings/api/startup/{raw}','PUT'),
+    #违章查询
+    '10110001':('http://127.0.0.1:1099/apollo/violation/search?{raw}','GET'),
+    #违章查询code
+    '10110002':('http://127.0.0.1:1099/apollo/violation/code?{raw}','GET'),
+    #违章查询验证图片
+    '10110003':('http://127.0.0.1:1099/apollo/violation/img?{raw}','GET'),
+##############################################################################
+    #新分词检索
+    '10030007':('http://127.0.0.1:1099/apollo/poi/bingo/api?{raw}','GET'),
+    #分词联想检索
+    '10030008':('http://127.0.0.1:1099/apollo/poi/bingo/suggest?{raw}','GET'),
+    #全国分组检索
+    '10030009':('http://127.0.0.1:1099/apollo/poi/bingo/group/api?{raw}','GET'),
+    #公交线路联想检索
+    '10060003':('http://127.0.0.1:1099/apollo/bus/busline/api?{raw}','GET'),
+    #公交站点联想检索
+    '10060004':('http://127.0.0.1:1099/apollo/bus/busstop/api?{raw}','GET'),
+    #十字路口道路联想检索
+    '10060010':('http://127.0.0.1:1099/apollo/cross/road/api?{raw}','GET'),
+    #热度统计接口
+    '10120001':('http://127.0.0.1:1099/apollo/hot?{raw}','GET'),
+    #油价接口
+    '10110004':('http://127.0.0.1:1099/apollo/oil?{raw}','GET'),
+    #限行接口
+    '10110005':('http://127.0.0.1:1099/apollo/tool?{raw}','GET'),
+}
+PULL_BUSSINESS_TABLE = {
+    #UUSDK log存储
+    '10010001':('http://127.0.0.1:12099/log/mobile/client/{raw}','POST'),
+    #启动画页广告计数
+    '10010002':('http://192.168.6.44:7001/advertisings/api/startup/{raw}','PUT'),
+}
