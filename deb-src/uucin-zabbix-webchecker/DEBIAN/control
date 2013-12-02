@@ -1,0 +1,8 @@
+Package: uucin-zabbix-webchecker
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: zabbix-agent (>= 1.0), curl (>= 7.22.0-3ubuntu4.3)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Zabbix Script & conf for Web Checker

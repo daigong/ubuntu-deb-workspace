@@ -1,0 +1,6 @@
+#!/bin/sh
+service zabbix-agent restart
+
+rm -f /etc/nginx/sites-enabled/nginx_status
+
+service nginx reload
