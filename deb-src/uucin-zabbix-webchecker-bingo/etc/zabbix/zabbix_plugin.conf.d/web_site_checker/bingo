@@ -1,0 +1,2 @@
+#nginx 1099
+check_bingo = http://127.0.0.1:6543/engine/api/group/poi?qt=keywords&q=天安门
