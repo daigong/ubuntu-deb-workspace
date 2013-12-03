@@ -1,0 +1,4 @@
+cython
+https://github.com/surfly/gevent/archive/master.zip
+django
+gunicorn

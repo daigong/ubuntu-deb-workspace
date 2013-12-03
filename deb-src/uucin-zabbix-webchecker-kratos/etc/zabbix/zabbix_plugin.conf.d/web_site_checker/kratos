@@ -1,0 +1,2 @@
+#nginx
+check_kratos_1100 = http://127.0.0.1:1100/kratos/poi/city?pos=25.28878348,118.93331823

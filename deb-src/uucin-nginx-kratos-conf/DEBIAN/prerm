@@ -1,0 +1,2 @@
+#!/bin/sh
+service uucin-nginx-kratos-conf stop
