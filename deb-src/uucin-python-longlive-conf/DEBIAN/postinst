@@ -1,4 +1,0 @@
-#!/bin/sh
-mv /usr/local/uu_stornado/stornado/settings.py /usr/local/uu_stornado/stornado/settings.py.install
-ln -s /etc/uucin-python-longlive-conf/setting.py /usr/local/uu_stornado/stornado/settings.py
-service uucin-python-longlive restart

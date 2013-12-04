@@ -1,8 +1,0 @@
-Package: uucin-python-longlive-conf
-Version: 1.0
-Architecture: amd64
-Maintainer: DaiGong <daigongit@gmail.com>
-Depends: uucin-python-longlive (>= 1.0)
-Multi-Arch: same
-Homepage: http://www.uucin.com
-Description: Python Longlive For UUCIN LBS

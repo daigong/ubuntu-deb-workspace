@@ -104,6 +104,14 @@ RESPONSE_BUSSINESS_TABLE={
     '10110004':('http://127.0.0.1:1099/apollo/oil?{raw}','GET'),
     #限行接口
     '10110005':('http://127.0.0.1:1099/apollo/tool?{raw}','GET'),
+    #天气接口
+    '10150001':('http://127.0.0.1:1099/apollo/weather/forecast?{raw}','GET'),
+    #预警接口
+    '10150002':('http://127.0.0.1:1099/apollo/weather/alarm?{raw}','GET'),
+    #指数接口
+    '10150003':('http://127.0.0.1:1099/apollo/weather/index?{raw}','GET'),
+    #外部数据code
+    '10080002':('http://127.0.0.1:1099/apollo/address/code/data','GET'),
 }
 PULL_BUSSINESS_TABLE = {
     #UUSDK log存储
