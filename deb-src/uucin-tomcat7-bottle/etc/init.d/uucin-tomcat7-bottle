@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ulimit -SHn 65535
 ### BEGIN INIT INFO
 # Author: daigongit@gmail.com
 # Description: uucin Apache Tomcat7 service

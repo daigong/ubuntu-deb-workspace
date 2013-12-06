@@ -1,4 +1,7 @@
 #!/bin/bash
+
+ulimit -SHn 65535
+
 . /lib/lsb/init-functions
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin

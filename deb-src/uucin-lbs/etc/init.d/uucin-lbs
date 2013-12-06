@@ -1,4 +1,7 @@
 #!/bin/bash
+
+ulimit -SHn 65535
+
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 . /lib/lsb/init-functions
 NAME=uucin_lbs
