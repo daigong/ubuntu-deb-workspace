@@ -1,0 +1,5 @@
+#!/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/bin/python
+# EASY-INSTALL-SCRIPT: 'strom==1.0.1.alpha.0','stromq'
+__requires__ = 'strom==1.0.1.alpha.0'
+import pkg_resources
+pkg_resources.run_script('strom==1.0.1.alpha.0', 'stromq')

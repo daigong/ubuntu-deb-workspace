@@ -1,0 +1,190 @@
+[2013-12-09 16:26:20,756](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:29:14,539](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:29:15,632](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:29:58,340](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:29:59,679](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:30:00,450](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:30:01,221](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:30:01,965](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:30:44,039](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:31:44,132](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:32:01,509](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:33:22,838](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 34, in connect
+    raise e;
+error: [Errno 111] Connection refused
+[2013-12-09 16:35:30,754](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 34, in connect
+    raise e;
+error: [Errno 111] Connection refused
+[2013-12-09 16:36:03,023](ERROR)root : IV must be 16 bytes long
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 38, in connect
+    decryptor = AES.new(self.key, AES.MODE_CBC, ivParameterSpec)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 95, in new
+    return AESCipher(key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 59, in __init__
+    blockalgo.BlockAlgo.__init__(self, _AES, key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/blockalgo.py", line 141, in __init__
+    self._cipher = factory.new(key, *args, **kwargs)
+ValueError: IV must be 16 bytes long
+[2013-12-09 16:36:45,099](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:36:46,200](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:37:45,728](ERROR)root : [Errno 111] Connection refused
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 31, in connect
+    self.sock.connect((self.addr, self.port))
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/gevent-1.0-py2.7-linux-x86_64.egg/gevent/socket.py", line 342, in connect
+    raise error(err, strerror(err))
+error: [Errno 111] Connection refused
+[2013-12-09 16:38:53,076](ERROR)root : IV must be 16 bytes long
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 38, in connect
+    decryptor = AES.new(self.key, AES.MODE_CBC, ivParameterSpec)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 95, in new
+    return AESCipher(key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 59, in __init__
+    blockalgo.BlockAlgo.__init__(self, _AES, key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/blockalgo.py", line 141, in __init__
+    self._cipher = factory.new(key, *args, **kwargs)
+ValueError: IV must be 16 bytes long
+[2013-12-09 16:38:58,441](ERROR)root : IV must be 16 bytes long
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 38, in connect
+    decryptor = AES.new(self.key, AES.MODE_CBC, ivParameterSpec)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 95, in new
+    return AESCipher(key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 59, in __init__
+    blockalgo.BlockAlgo.__init__(self, _AES, key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/blockalgo.py", line 141, in __init__
+    self._cipher = factory.new(key, *args, **kwargs)
+ValueError: IV must be 16 bytes long
+[2013-12-09 16:39:22,624](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 35, in connect
+    exit(0)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/lib/python2.7/site.py", line 399, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+[2013-12-09 16:42:18,479](ERROR)root : IV must be 16 bytes long
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 41, in connect
+    decryptor = AES.new(self.key, AES.MODE_CBC, ivParameterSpec)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 95, in new
+    return AESCipher(key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/AES.py", line 59, in __init__
+    blockalgo.BlockAlgo.__init__(self, _AES, key, *args, **kwargs)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/pycrypto-2.6.1-py2.7-linux-x86_64.egg/Crypto/Cipher/blockalgo.py", line 141, in __init__
+    self._cipher = factory.new(key, *args, **kwargs)
+ValueError: IV must be 16 bytes long
+[2013-12-09 16:42:47,789](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 34, in connect
+    exit(0)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/lib/python2.7/site.py", line 399, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+[2013-12-09 16:43:42,585](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 34, in connect
+    exit(0)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/lib/python2.7/site.py", line 399, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+[2013-12-09 16:43:46,643](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 34, in connect
+    exit(0)
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/lib/python2.7/site.py", line 399, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+[2013-12-09 16:45:14,962](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 35, in connect
+    sys.exit(0)
+SystemExit: 0
+[2013-12-09 16:45:16,345](ERROR)root : 0
+Traceback (most recent call last):
+  File "/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/longlive_checker_env/local/lib/python2.7/site-packages/strom-1.0.1.alpha.0-py2.7.egg/strom/client.py", line 35, in connect
+    sys.exit(0)
+SystemExit: 0

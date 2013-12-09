@@ -1,0 +1,1 @@
+../../zabbix/zabbix_plugin.conf.d/longlive_checker/checker_script/checker.py
