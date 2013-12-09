@@ -1,2 +1,3 @@
 #!/bin/sh
 service zabbix-agent restart
+rm /home/ubuntu-deb-workspace/deb-src/uucin-zabbix-longlive/etc/zabbix/zabbix_plugin.conf.d/longlive_checker/logs/* -f
