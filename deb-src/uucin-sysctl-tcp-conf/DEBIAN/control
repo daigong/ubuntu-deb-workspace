@@ -1,5 +1,5 @@
 Package: uucin-sysctl-tcp-conf
-Version: 1.0
+Version: 1.1
 Architecture: amd64
 Maintainer: DaiGong <daigongit@gmail.com>
 Multi-Arch: same
