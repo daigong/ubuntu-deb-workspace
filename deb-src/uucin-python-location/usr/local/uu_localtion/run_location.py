@@ -3,6 +3,8 @@ monkey.patch_all()
 
 import sys
 import getopt
+import leveldb
+from collections import namedtuple
 from raven import Client
 from raven.contrib.bottle import Sentry
 from location.api import application
@@ -11,6 +13,11 @@ application.catchall = False
 client = Client('http://aa881eaaaa7845a187d23a3b03606a72:2d283126172541249f6f5a6b0e916ea7@sentry.uucin.com/6')
 application = Sentry(application, client)
 
+application.db = namedtuple("LevelDB", ['ip', 'wifi', 'cell'])(
+    None,
+    leveldb.LevelDB("./data/wifi"),
+    leveldb.LevelDB("./data/cell"),
+)
 
 addr, port = '127.0.0.1', 7001
 opts, _ = getopt.getopt(sys.argv[1:], "b:")
