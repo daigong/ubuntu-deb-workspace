@@ -1,5 +1,5 @@
 Package: uucin-lbs-apollo
-Version: 1.1
+Version: 1.2
 Architecture: amd64
 Maintainer: DaiGong <daigongit@gmail.com>
 Depends: uucin-nginx-apollo-conf (>= 1.0), uucin-tomcat7-apollo (>= 1.0), uucin-python-longlive (>= 1.0), uucin-nginx-redis-conf (>= 1.0)
