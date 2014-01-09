@@ -1,0 +1,7 @@
+Package: uucin-tool-vmtouch
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: vmtouch is a cache tool
