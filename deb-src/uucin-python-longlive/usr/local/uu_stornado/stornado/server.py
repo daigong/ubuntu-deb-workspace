@@ -112,7 +112,8 @@ class StornadoServer(BaseServer):
 
     def __init__(self, listener, request_handler):
         BaseServer.__init__(self, listener, request_handler=request_handler)
-        self.max_accept = 100000
+        self.backlog = 100000
+        self.max_accept = 100
         self.timeout = 300
         self.min_delay = 0.01
         self.max_delay = 1

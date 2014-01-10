@@ -20,7 +20,7 @@ class LineHandler(BaseRequestHandler):
         BaseRequestHandler.__init__(self, request, client_address, server)
         self.connection_closed = False
         self._buffer = ''
-        self.timeout = 60 * 5
+        self.timeout = server.timeout
 
     def clearLineBuffer(self):
         """
@@ -74,7 +74,14 @@ class LineHandler(BaseRequestHandler):
 class MessageHandler(LineHandler):
 
     key = '$9Zz\xee\xb4h\xa8\xf4h\x01g8\x19\xffc'
-    response_class = MessageResponse
+
+    def __init__(self, request, client_address, server):
+        LineHandler.__init__(self, request, client_address, server)
+        self.message_response = MessageResponse(
+            request,
+            client_address,
+            server,
+        )
 
     def setup(self):
         """
@@ -98,6 +105,8 @@ class MessageHandler(LineHandler):
         return ciph, ivParameterSpec
 
     def lineReceived(self, line):
-        response = MessageResponse(
-            self.request, self.client_address, self.server)
-        self.sendLine(response.makeResponse(line))
+        self.sendLine(self.message_response.makeResponse(line))
+
+    def destroy(self):
+        LineHandler.close(self)
+        self.message_response.close()
