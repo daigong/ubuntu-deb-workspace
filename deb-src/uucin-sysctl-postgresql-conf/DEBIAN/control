@@ -1,0 +1,7 @@
+Package: uucin-sysctl-postgresql-conf
+Version: 1.1
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: sysctl postgres conf
