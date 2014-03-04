@@ -1,0 +1,53 @@
+#!/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+. /lib/lsb/init-functions
+NAME=uucin-lbs-athena
+
+
+init_project()
+{
+	#do nothing
+	log_success_msg "init project ok"
+}
+
+start()
+{
+	service uucin-tomcat7-athena start
+	log_success_msg "waiting tomcat start............"
+	service uucin-nginx-athena-conf start
+	log_success_msg "$NAME start ok"
+}
+
+stop()
+{
+	service uucin-nginx-athena-conf stop
+        service uucin-tomcat7-athena stop
+        log_success_msg "$NAME stop ok"
+}
+
+reload()
+{
+	init_project
+	service uucin-nginx-athena-conf restart
+}
+
+case "$1" in
+	
+	start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        reload)
+		reload
+                ;;
+        restart)
+		stop
+		start
+                ;;
+        *)
+            echo "Usage: $0 in start restart stop reload"
+            exit 1
+                ;;
+esac
