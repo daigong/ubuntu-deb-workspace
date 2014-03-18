@@ -1,0 +1,75 @@
+#!/bin/bash
+
+ulimit -SHn 65535
+
+. /lib/lsb/init-functions
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+NAME=uucin-python-location
+
+ENV_HOME=/usr/local/uu_location_env
+PROJECT_HOME=/usr/local/uu_location
+
+check_and_reload_nginx()
+{
+	service nginx configtest > /dev/null 2>&1
+
+	if [ 0 -ne $? ]
+	then
+		log_failure_msg "$NAME nginx test is failure,plz nginx -t"
+		exit 1
+	else
+		service nginx reload > /dev/null
+		service nginx start > /dev/null
+	fi
+}
+
+start()
+{
+        source $ENV_HOME/bin/activate
+
+        cd /usr/local/uu_location/
+        
+        gunicorn wsgi:application -b unix:/run/uu_location.sock --worker-class gevent -p /run/uu_location.pid --daemon
+
+	if [ -f /etc/nginx/sites-enabled/uucin-python-location-conf ]
+        then
+                log_success_msg "$NAME is start ok"
+                exit 0
+        else
+                ln -s /etc/nginx/sites-available/uucin-python-location-conf /etc/nginx/sites-enabled/uucin-python-location-conf
+                check_and_reload_nginx
+        fi
+	log_success_msg "$NAME is start ok"
+}
+stop()
+{
+        pid=`cat /run/uu_location.pid`
+
+        if [ -n "$pid" ]
+        then
+                kill -9 $pid
+        fi
+
+	rm -f /etc/nginx/sites-enabled/uucin-python-location-conf
+	check_and_reload_nginx
+        log_success_msg "$NAME is stop ok"
+}
+case "$1" in
+
+        start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        restart)
+		stop
+		start
+                ;;
+        *)
+            echo "Usage: $0 in start stop restart"
+	    exit 1
+	    ;;
+esac

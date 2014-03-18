@@ -1,0 +1,8 @@
+Package: uucin-python-longlive-stage
+Version: 1.1
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: libevent-dev (>= 2.0.16-stable-1), python-virtualenv (>=1.7.1.2-1), python (>= 2.7.3-0ubuntu2), python2.7-dev (>= 2.7.3)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Python Longlive Stage For UUCIN LBS

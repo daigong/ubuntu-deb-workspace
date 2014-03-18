@@ -1,0 +1,15 @@
+upstream location_python {
+        server 127.0.0.1:17601 weight=5;
+}
+
+server {
+        listen      7601;
+        server_name  localhost;
+        location / {
+            proxy_pass      http://location_python;
+            proxy_set_header           Host $host;
+            proxy_set_header           X-Real-IP $remote_addr;
+            proxy_cache_valid all 1m;
+        }
+}
+
