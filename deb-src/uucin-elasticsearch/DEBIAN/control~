@@ -1,0 +1,8 @@
+Package: uucin-elasticsearch
+Version: 1.0.1
+Section: web
+Priority: optional
+Architecture: all
+Depends: libc6, adduser, uucin-sunjdk7
+Maintainer: daigong@sunmap.com
+Description: uucin elasticsearch
