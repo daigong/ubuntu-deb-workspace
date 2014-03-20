@@ -1,5 +1,5 @@
 upstream location_python {
-        server 127.0.0.1:17601 weight=5;
+        server unix:/run/uu_location.sock weight=5;
 }
 
 server {
