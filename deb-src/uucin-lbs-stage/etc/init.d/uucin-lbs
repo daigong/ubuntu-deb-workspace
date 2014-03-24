@@ -1,0 +1,48 @@
+#!/bin/bash
+
+ulimit -SHn 65535
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+. /lib/lsb/init-functions
+NAME=uucin_lbs
+
+start()
+{
+	service uucin-lbs-bottle start
+        service uucin-lbs-apollo start
+	log_success_msg "$NAME start ok"
+}
+
+stop()
+{
+        service uucin-lbs-apollo stop
+        service uucin-lbs-bottle stop
+        log_success_msg "$NAME stop ok"
+}
+
+reload()
+{
+        service uucin-lbs-bottle reload
+        service uucin-lbs-apollo reload
+}
+
+case "$1" in
+	
+	start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        reload)
+		reload
+                ;;
+        restart)
+		stop
+		start
+                ;;
+        *)
+            echo "Usage: $0 in start restart stop reload"
+            exit 1
+                ;;
+esac

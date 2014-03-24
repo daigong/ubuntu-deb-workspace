@@ -1,0 +1,8 @@
+Package: uucin-lbs-bottle-stage
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-nginx-bottle-conf (>= 1.0), uucin-tomcat7-bottle (>= 1.0), uucin-nginx-redis-conf (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Lbs Bottle Stage All Depends & Util Shell
