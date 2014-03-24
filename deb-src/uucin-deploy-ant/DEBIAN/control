@@ -1,0 +1,8 @@
+Package: uucin-deploy-ant
+Version: 1.1
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-sunjdk7 (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: uucin deploy ant tool
