@@ -13,6 +13,11 @@ STORNADO_HOME=/usr/local/uu_stornado
 PARAMS_PORT=1001
 PARAMS_C=4
 
+if [ -f /etc/default/uucin-python-longlive ]; then
+        . /etc/default/uucin-python-longlive
+fi
+
+
 function start()
 {
         PIDS=`ps -ef|grep "python"|grep "uu_stornado"|grep -v "grep"|awk '{print $2}'`;
