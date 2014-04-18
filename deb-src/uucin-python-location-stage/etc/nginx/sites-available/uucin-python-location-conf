@@ -2,6 +2,8 @@ upstream location_python {
         server unix:/run/uu_location.sock weight=5;
 }
 
+limit_req_zone $binary_remote_addr zone=allips:10m rate=5r/s;
+
 server {
         listen      7601;
         server_name  localhost;
@@ -10,6 +12,7 @@ server {
             proxy_set_header           Host $host;
             proxy_set_header           X-Real-IP $remote_addr;
             proxy_cache_valid all 1m;
+	    limit_req zone=allips burst=5 nodelay;
         }
 }
 
