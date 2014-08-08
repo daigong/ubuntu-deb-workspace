@@ -1,0 +1,8 @@
+Package: uucin-lbs-kratos-stage
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-nginx-kratos-conf (>= 1.0), uucin-tomcat7-kratos (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Lbs Kratos All Depends & Util Shell
