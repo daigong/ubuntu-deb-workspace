@@ -1,0 +1,71 @@
+#!/bin/bash
+
+ulimit -SHn 65535
+
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+. /lib/lsb/init-functions
+NAME=uucin_lbs_suggest
+
+
+init_suggest()
+{
+
+	wget "http://127.0.0.1:9280/suggest/address/code"  -O /dev/null -T 600 > /dev/null 2>&1
+
+	return_code=$?
+
+	if [ 0 -ne $return_code ]
+	then
+		log_failure_msg "$NAME init  failure! wget return code $return_code"
+		exit $return_code
+	else
+		log_success_msg "init ok"
+	fi
+}
+
+start()
+{
+	service uucin-tomcat7-suggest start
+	log_success_msg "waiting tomcat start............"
+	sleep 15;
+	init_suggest
+	service uucin-nginx-suggest-conf start
+	service uucin-python-longlive start
+	log_success_msg "$NAME start ok"
+}
+
+stop()
+{
+	service uucin-python-longlive stop
+	service uucin-nginx-suggest-conf stop
+        service uucin-tomcat7-suggest stop
+        log_success_msg "$NAME stop ok"
+}
+
+reload()
+{
+	service uucin-nginx-suggest-conf restart
+	init_suggest
+}
+
+case "$1" in
+	
+	start)
+                start
+                ;;
+        stop)
+                stop
+                ;;
+        reload)
+		reload
+                ;;
+        restart)
+		stop
+		sleep 5;
+		start
+                ;;
+        *)
+            echo "Usage: $0 in start restart stop reload"
+            exit 1
+                ;;
+esac

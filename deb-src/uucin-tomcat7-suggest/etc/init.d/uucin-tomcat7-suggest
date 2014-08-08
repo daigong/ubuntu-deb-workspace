@@ -1,0 +1,68 @@
+#!/bin/sh
+
+ulimit -SHn 65535
+
+### BEGIN INIT INFO
+# Author: daigongit@gmail.com
+# Description: uucin Apache Tomcat7 service
+### END INIT INFO
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+. /etc/profile.d/uu_jdk1.7.sh
+. /lib/lsb/init-functions
+LANG=zh_CN.UTF-8
+LANGUAGE=zh_CN:zh
+TOMCAT_PATH=/usr/local/uu_tomcat7_suggest
+TOMCAT_PID=/var/run/uu_tomcat7_suggest.pid
+NAME=uucin_tomcat7_suggest
+
+start_tomcat()
+{
+	${TOMCAT_PATH}/bin/catalina.sh start > /dev/null
+	log_success_msg "$NAME start OK"
+}
+
+stop_tomcat()
+{
+	if [ -f $TOMCAT_PID ]
+	then
+		PID="`cat $TOMCAT_PID`"
+		kill -9 $PID > /dev/null 2>&1
+		log_success_msg "$NAME stop OK , Kill PID is $PID"
+		rm $TOMCAT_PID -f
+	else
+		log_failure_msg "PID file not found ! Maybe $NAME is not start"
+	fi
+}
+tomcat_status()
+{
+	if [ -f $TOMCAT_PID ]
+	then
+		PID="`cat $TOMCAT_PID`"
+        	log_success_msg "$NAME is On , pid is $PID"
+	else
+		log_success_msg "$NAME is Off"
+	fi
+}
+
+case "$1" in
+	start)
+		start_tomcat
+		;;
+	stop)
+		stop_tomcat
+		;;
+	status)
+		tomcat_status
+		;;
+	restart)
+		stop_tomcat
+		start_tomcat
+		;;
+	*)
+		echo "Usage: $NAME {start|stop|restart|status}" >&2
+		exit 1
+		;;
+esac
+
+exit 0
+
