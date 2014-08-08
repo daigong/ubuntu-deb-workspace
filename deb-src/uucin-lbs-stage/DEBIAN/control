@@ -1,8 +1,8 @@
 Package: uucin-lbs-stage
-Version: 1.2
+Version: 1.4
 Architecture: amd64
 Maintainer: DaiGong <daigongit@gmail.com>
-Depends: uucin-lbs-bottle-stage (>= 1.0), uucin-lbs-apollo-stage (>= 1.0)
+Depends: uucin-lbs-bottle-stage (>= 1.0), uucin-lbs-apollo-stage (>= 1.0), uucin-lbs-suggest-stage (>= 1.0)
 Multi-Arch: same
 Homepage: http://www.uucin.com
 Description: Lbs All Stage Depends & Util Shell
