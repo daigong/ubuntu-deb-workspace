@@ -1,0 +1,3 @@
+check_suggest_nginx = http://127.0.0.1:1399/cloudsearch_suggest/poi?q=%E5%AE%B6%E4%B9%90%E7%A6%8F&location=22.553,114.1073&region=%E5%B9%BF%E5%B7%9E%E5%B8%82&page_size=10&page_num=1
+
+check_suggest_tomcat = http://127.0.0.1:9280/cloudsearch_suggest/poi?q=%E5%AE%B6%E4%B9%90%E7%A6%8F&location=22.553,114.1073&region=%E5%B9%BF%E5%B7%9E%E5%B8%82&page_size=10&page_num=1

@@ -10,7 +10,7 @@ NAME=uucin_lbs_suggest
 init_suggest()
 {
 
-	wget "http://127.0.0.1:9280/suggest/address/code"  -O /dev/null -T 600 > /dev/null 2>&1
+	wget "http://127.0.0.1:9280/cloudsearch_suggest/poi?q=家乐福&location=22.553,114.1073&region=广州市&page_size=10&page_num=1"  -O /dev/null -T 600 > /dev/null 2>&1
 
 	return_code=$?
 

@@ -1,2 +1,2 @@
 #!/bin/sh
-service uucin-tomcat7-apollo start
+service uucin-tomcat7-suggest start
