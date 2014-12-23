@@ -1,0 +1,8 @@
+Package: uucin-nginx-spirit-conf
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: nginx (>= 1.1.19-1ubuntu0.2)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Nginx Conf for Spirit Tomcat
