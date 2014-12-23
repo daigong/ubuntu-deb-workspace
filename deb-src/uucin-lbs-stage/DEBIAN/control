@@ -1,5 +1,5 @@
 Package: uucin-lbs-stage
-Version: 1.5
+Version: 1.6
 Architecture: amd64
 Maintainer: DaiGong <daigongit@gmail.com>
 Depends: uucin-lbs-bottle-stage (>= 1.0), uucin-lbs-apollo-stage (>= 1.0), uucin-lbs-suggest-stage (>= 1.0), uucin-lbs-spirit-stage (>= 1.0)

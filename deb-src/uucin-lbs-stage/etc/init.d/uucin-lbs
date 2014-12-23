@@ -11,6 +11,7 @@ start()
 	service uucin-lbs-bottle start
         service uucin-lbs-apollo start
         service uucin-lbs-suggest start
+	service uucin-lbs-spirit start
 	log_success_msg "$NAME start ok"
 }
 
@@ -19,6 +20,7 @@ stop()
         service uucin-lbs-apollo stop
         service uucin-lbs-bottle stop
 	service uucin-lbs-suggest stop
+	service uucin-lbs-spirit stop
         log_success_msg "$NAME stop ok"
 }
 
@@ -27,6 +29,7 @@ reload()
         service uucin-lbs-bottle reload
         service uucin-lbs-apollo reload
 	service uucin-lbs-suggest reload
+	service uucin-lbs-spirit reload
 }
 
 case "$1" in
