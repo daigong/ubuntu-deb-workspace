@@ -1,0 +1,4 @@
+six
+nose
+libwapiti
+setuptools>=1.0

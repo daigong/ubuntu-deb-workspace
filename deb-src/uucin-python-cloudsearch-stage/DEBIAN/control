@@ -1,0 +1,8 @@
+Package: uucin-python-cloudsearch-stage
+Version: 1.1
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: python-virtualenv (>=1.7.1.2-1), python (>= 2.7.3-0ubuntu2), python2.7-dev (>= 2.7.3), binutils (>= 2.22-6ubuntu1.1), libproj-dev (>= 4.7.0-1), gdal-bin (>= 1.7.3-6ubuntu3), libpq-dev (>= 9.1.10-0ubuntu12.04), supervisor (>=3.0a8-1.1), nginx (>= 1.1.19-1ubuntu0.4)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Python Cloudsearch Stage For UUCIN LBS
