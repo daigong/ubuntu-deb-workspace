@@ -1,0 +1,21 @@
+DEFAULT menu
+PROMPT 0
+MENU TITLE Cobbler | http://fedorahosted.org/cobbler
+TIMEOUT 200
+TOTALTIMEOUT 6000
+ONTIMEOUT local
+
+LABEL local
+        MENU LABEL (local)
+	MENU DEFAULT
+        LOCALBOOT -1
+
+LABEL ubuntu-12.04-x86_64
+        kernel /images/ubuntu-12.04-x86_64/linux
+        MENU LABEL ubuntu-12.04-x86_64
+        append initrd=/images/ubuntu-12.04-x86_64/initrd.gz  locale=  locale=en_US priority=critical text  auto url=http://10.1.7.1:88/ubuntu-12.04.preseed  domain=local.lan suite=precise
+        ipappend 2
+
+
+
+MENU end

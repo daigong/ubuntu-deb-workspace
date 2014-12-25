@@ -1,0 +1,11 @@
+##############################################################
+#os 自动安装ubuntu dhcp tftp 配置
+##############################################################
+dhcp-range=10.1.7.20,10.1.7.99,12h #dhcp分配的地址段和有效时间
+dhcp-option=3,10.1.7.1 #制定网络网关
+dhcp-boot=pxelinux.0 #linux安装加载文件
+
+enable-tftp #开启tftp
+tftp-root=/var/lib/uucin-tftpboot #制定tftp目录
+dhcp-authoritative #开启dhcp广播
+

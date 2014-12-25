@@ -1,0 +1,9 @@
+default=0
+timeout=0
+
+title ubuntu-12.04-x86_64
+    root (nd)
+    kernel /images/ubuntu-12.04-x86_64/linux   locale=  locale=en_US priority=critical text  auto url=http://192.168.7.1/cblr/svc/op/ks/profile/ubuntu-12.04-x86_64 hostname=ubuntu-12.04-x86-64 domain=local.lan suite=precise
+    initrd /images/ubuntu-12.04-x86_64/initrd.gz
+
+

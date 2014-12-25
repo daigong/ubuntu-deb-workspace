@@ -1,0 +1,55 @@
+DEFAULT menu.c32
+PROMPT 0
+MENU WIDTH 80
+MENU HEIGHT 120
+MENU TITLE Communicate with DaiGong ! This is Operationer's Tool
+TIMEOUT 50
+TOTALTIMEOUT 60000
+ONTIMEOUT local
+
+LABEL . . @ . . @ @ @ @ @ @ . . . . @ . . . @ . @ . . . 
+LABEL . . . @ . . . . . . . . . . . @ . . . @ . @ . . . 
+LABEL . . . . . . . . . . . . . . @ . @ . @ @ @ @ @ @ . 
+LABEL . . . . @ @ @ @ @ @ @ @ . @ . . @ . @ . . @ . . . 
+LABEL . @ @ . . . . @ . . . . . @ @ @ . @ @ @ @ @ @ @ . 
+LABEL . . @ . . . . @ . . . . . . . @ . . @ . . @ . . . 
+LABEL . . @ . . . @ . . @ . . . . @ . @ . @ . . @ . . . 
+LABEL . . @ . . @ @ @ @ @ @ . . @ @ @ . . @ @ @ @ @ @ . 
+LABEL . . @ . . @ . . . . @ . . . . . @ . @ . . @ . . . 
+LABEL . @ . @ . . . . . . . . . @ @ @ . . @ . . @ . . . 
+LABEL . @ . . @ @ @ @ @ @ @ @ . @ . . . . @ @ @ @ @ @ . 
+
+
+LABEL local
+        MENU LABEL Do Nothing & Return To YOUR OS Safely
+        MENU DEFAULT
+        LOCALBOOT -1
+
+
+LABEL @@@@@@@@@@@@@@!!!!!!!!!WARNING!!!!!!!!!@@@@@@@@@@@@@@
+
+LABEL Communicate with Daigong:
+
+LABEL Mail: daigong@sunmap.com , Tel: 15940547013 
+
+LABEL Operationer's Tool that Auto Install Ubuntu.
+
+LABEL Don't Choose Below Ubuntu Menu , It Will AUTO Format Your Desk !!!
+
+LABEL @@@@@@@@@@@@@@!!!!!!!!!WARNING!!!!!!!!!@@@@@@@@@@@@@@
+ 
+
+LABEL format Disk & install server-ubuntu-12.04-x86_64
+        kernel /images/ubuntu-12.04-x86_64/linux
+        MENU LABEL install server-ubuntu-12.04-x86_64
+        append initrd=/images/ubuntu-12.04-x86_64/initrd.gz  locale=  locale=en_US priority=critical text  auto url=http://10.1.7.1:88/ubuntu-12.04.preseed  domain=local.lan suite=precise
+        ipappend 2
+
+LABEL format Disk & install desktop-ubuntu-12.04-x86_64
+        kernel /images/ubuntu-12.04-x86_64/linux
+        MENU LABEL install desktop-ubuntu-12.04-x86_64
+        append initrd=/images/ubuntu-12.04-x86_64/initrd.gz  locale=  locale=en_US priority=critical text  auto url=http://10.1.7.1:88/ubuntu-12.04-desktop.preseed  domain=local.lan suite=precise
+        ipappend 2
+
+
+MENU end

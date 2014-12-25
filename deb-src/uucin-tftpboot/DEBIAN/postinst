@@ -1,0 +1,10 @@
+echo "######################config#########################"
+echo "configure /home/ubuntu-deb-workspace/deb-src/uucin-tftpboot/var/lib/uucin-tftpboot/pxelinux.cfg/default set preseed ip"
+echo "configure /home/ubuntu-deb-workspace/deb-src/uucin-tftpboot/var/lib/uucin-tftpboot/os-preseeds/* set mirror ip"
+echo "configure /etc/dnsmasq.d/uucin-tftpboot.dpkg-dist ip dhcp-range"
+echo "######################config#########################"
+
+ln -s /etc/nginx/sites-available/uucin-tftpboot-conf /etc/nginx/sites-enabled/uucin-tftpboot-conf
+service nginx reload
+service dnsmasq restart
+

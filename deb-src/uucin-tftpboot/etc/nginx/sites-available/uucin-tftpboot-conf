@@ -1,0 +1,6 @@
+server {
+        listen       88;
+        autoindex on;
+        root /var/lib/uucin-tftpboot/os-preseeds;
+}
+

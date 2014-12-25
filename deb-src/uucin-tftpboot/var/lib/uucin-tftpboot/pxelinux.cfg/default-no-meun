@@ -1,0 +1,4 @@
+default auto
+label auto
+    kernel /images/ubuntu-12.04-x86_64/linux
+    append initrd=/images/ubuntu-12.04-x86_64/initrd.gz  locale=  locale=en_US priority=critical text  auto url=http://10.1.7.1:88/ubuntu-12.04.preseed  domain=local.lan suite=precise

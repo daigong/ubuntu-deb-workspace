@@ -1,0 +1,3 @@
+rm /etc/nginx/sites-enabled/uucin-tftpboot-conf -f
+service nginx reload
+service dnsmasq restart
