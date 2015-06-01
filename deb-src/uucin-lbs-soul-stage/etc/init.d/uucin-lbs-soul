@@ -7,28 +7,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 NAME=uucin_lbs_soul
 
 
-init_apollo()
-{
-
-	wget "http://127.0.0.1:6580/soul/address/code"  -O /dev/null -T 600 > /dev/null 2>&1
-
-	return_code=$?
-
-	if [ 0 -ne $return_code ]
-	then
-		log_failure_msg "$NAME init failure! wget return code $return_code"
-		exit $return_code
-	else
-		log_success_msg "$NAME init ok"
-	fi
-}
-
 start()
 {
 	service uucin-tomcat7-soul start
 	log_success_msg "waiting tomcat start............"
 	sleep 15;
-	init_apollo
 	service uucin-nginx-soul-conf start
 	log_success_msg "$NAME start ok"
 }
@@ -43,7 +26,6 @@ stop()
 reload()
 {
 	service uucin-nginx-soul-conf restart
-	init_apollo
 }
 
 case "$1" in
