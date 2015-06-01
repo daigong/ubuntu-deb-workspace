@@ -1,0 +1,8 @@
+Package: uucin-lbs-soul-stage
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-nginx-soul-conf (>= 1.0), uucin-tomcat7-soul (>= 1.0), uucin-nginx-redis-conf (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Lbs soul Stage All Depends & Util Shell
