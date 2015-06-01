@@ -1,0 +1,13 @@
+Package: nginx
+Version: 1.6.3-1~precise
+Architecture: amd64
+Maintainer: Sergey Budnevitch <sb@nginx.com>
+Installed-Size: 988
+Depends: libc6 (>= 2.14), libpcre3 (>= 8.10), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.2.0), lsb-base, adduser
+Provides: httpd
+Section: httpd
+Priority: optional
+Homepage: http://nginx.org
+Description: high performance web server
+ nginx [engine x] is an HTTP and reverse proxy server, as well as
+ a mail proxy server.
