@@ -1,0 +1,4 @@
+JAVA_HOME=/usr/local/mx-jdk1.7
+CLASS_PATH=$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+PATH=$JAVA_HOME/bin:$PATH
+export JAVA_HOME CLASS_PATH PATH

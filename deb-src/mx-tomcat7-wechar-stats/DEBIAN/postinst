@@ -1,0 +1,3 @@
+#!/bin/sh
+NAME=mx-tomcat7-wechar-stats
+service $NAME start

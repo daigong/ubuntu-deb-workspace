@@ -1,0 +1,7 @@
+Package: mx-tomcat7-wechar-stats
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: mx-sunjdk7 (>= 1.0)
+Multi-Arch: same
+Description: Apache Tomcat7 For FM

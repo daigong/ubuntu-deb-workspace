@@ -1,0 +1,6 @@
+Package: mx-sunjdk7
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Multi-Arch: same
+Description: sun jdk7

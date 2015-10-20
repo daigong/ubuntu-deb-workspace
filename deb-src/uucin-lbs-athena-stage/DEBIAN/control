@@ -1,0 +1,8 @@
+Package: uucin-lbs-athena-stage
+Version: 1.0
+Architecture: amd64
+Maintainer: DaiGong <daigongit@gmail.com>
+Depends: uucin-nginx-athena-conf (>= 1.0), uucin-tomcat7-athena (>= 1.0)
+Multi-Arch: same
+Homepage: http://www.uucin.com
+Description: Lbs Athena All Depends & Util Shell

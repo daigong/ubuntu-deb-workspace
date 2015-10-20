@@ -1,0 +1,3 @@
+#!/bin/sh
+NAME=mx-tomcat7-mazda-auth
+service $NAME stop

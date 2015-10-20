@@ -1,0 +1,3 @@
+#!/bin/sh
+NAME=mx-tomcat7-weather
+service $NAME stop

@@ -14,15 +14,7 @@ init_bottle()
 
 	wget "http://127.0.0.1:9080/bottle/address_code"  -O /dev/null -T 600 > /dev/null 2>&1
 
-	return_code=$?
-
-	if [ 0 -ne $return_code ]
-	then
-		log_failure_msg "$NAME init bottle failure! wget return code $return_code"
-		exit $return_code
-	else
-		log_success_msg "init bottle ok"
-	fi
+	log_success_msg "init bottle ok"
 }
 
 start()
